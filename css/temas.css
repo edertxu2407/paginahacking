@@ -1,0 +1,126 @@
+#header {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+}
+
+#header h1 {
+  margin: 0px;
+  color: #FFFFFF;
+}
+
+body {
+  margin: 0px;
+  font-family: hack nerd font;
+  color: #FFFFFF;
+}
+
+#header ul {
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 1500px;
+
+ }
+
+#header li {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+
+#content {
+  padding: 20px;
+  line-height: 2;
+}
+
+#header ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#header ul a:hover {
+  color: #ff0000;
+}
+
+#header ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background:#eee;
+ padding:0;
+}
+
+#header ul ul li {
+ float:none;
+ width:150px
+}
+
+#header ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+
+#header ul li:hover > ul {
+ display:block;
+}
+
+#content h2 {
+  padding: 0 200px 0 200px;
+}
+
+#content img {
+  padding: 20px 75px 20px 50px;
+}
+
+#content p {
+  padding: 0 200px 0 200px;
+}
+
+#content p a {
+  color: #FF0000;
+  text-decoration: none
+}
+
+#content img.zphisher {
+  padding-left: 200px;
+}
+
+#content img.brutegram {
+  padding-left: 200px
+}
+
+#content img.msf1 {
+  padding: 40px 200px 40px 200px;
+  height: 700px;
+  weight: 2000px;
+}
+
+#header img.logo {
+  height: 100px;
+  weight: 100px;
+}
+
+#content h1 {
+  padding-left: 200px;
+}
+
+#content img.meterpreter {
+  padding-left: 200px;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+
+footer a  {
+  color: white;
+}
+
+footer a:hover  {
+  color: red;
+}

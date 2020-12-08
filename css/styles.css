@@ -1,0 +1,218 @@
+#header {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+}
+
+#header h1 {
+  margin: 0px;
+  color: #FFFFFF;
+}
+
+body {
+  margin: 0px;
+  font-family: hack nerd font;
+  color: #FFFFFF;
+}
+
+#header ul {
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 1400px;
+
+ }
+
+#header li {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+#header li a {
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 12px;
+  display:block;
+}
+#header li:hover > ul {
+  display:block;
+}
+
+#header li ul li {
+  position:relative;
+}
+
+#header li ul li ul {
+  right:-140px;
+  top:0px;
+}
+#header li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+
+#content {
+  padding: 20px;
+}
+
+#header ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#header ul a:hover {
+  color: #ff0000;
+}
+
+#header ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background:#eee;
+ padding:0;
+}
+
+#header ul ul li {
+ float:none;
+ width:150px;
+ position:relative;
+ float:left;
+ margin:0;
+ padding:0;
+}
+
+#header ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+
+#header ul li:hover > ul {
+ display:block;
+}
+
+.two-columns img, .two-columns p {
+  float: left;
+  width: 40%;
+}
+
+.two-columns p {
+  margin: 0 0px;
+}
+
+#content form [type=text],#content form [type=Email],#content form textarea {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+table{
+  border: 1px solid #ccc;
+}
+
+#content table tr {
+  background-color: #000000
+}
+
+#content table tr * {
+  padding: 6px
+}
+
+#content table tr ts.7 {
+  background-color: red;
+}
+
+#header img.logo {
+  height: 100px;
+  weight: 100px;
+}
+
+#content text {
+  padding: 0px 200px 0px 200px;
+}
+
+#content ul  {
+  text-decoration:none;
+  list-style: none;
+}
+
+#content ul a  {
+  text-decoration:none;
+  color: white;
+  list-style: none;
+}
+
+#content ul a:hover {
+  color: red;
+}
+
+.color {
+  background-color: red;
+}
+
+.hackerindex {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#content {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.sombreros {
+  padding-left: 300px;
+  padding-right: 250px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ataques {
+  padding-left: 250px;
+  padding-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.carcel {
+  padding-left: 300px;
+  padding-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+
+footer a  {
+  color: white;
+}
+
+footer a:hover  {
+  color: red;
+}
+
+.instagram {
+  padding-left: 300px;
+  padding-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hackandroid {
+  padding-left: 300px;
+  padding-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}

