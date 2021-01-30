@@ -4,37 +4,56 @@
         <meta charset="utf-8"
         <title="Home">
         <link href="./css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     </head>
     <body background="./img/negro.jpg">
 
-      <div id="header">
-        <img src="./img/logo.png"/ class="logo">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="temas.html">Temas</a></li>
-          <ul>
-            <li><a href="hack_instagram.html">Hackear Instagram</a></li>
-            <li><a href="meterpreter_android.html">Hackear android</a></li>
-          </ul>
-          <li><a href="sobre-mi.html">Sobre mi</a></li>
-          <li><a href="contact.html">Contáctame</a></li>
-        </ul>
-      </div>
+      <!-- header -->
 
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark-black">
+        <div class="container-fluid">
+            <img src="./img/logo.png"/ class="logo" height="80" width="90">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav" aria-current="page" href="index.html" >Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav" href="temas.html">Temas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav" href="sobre-mi.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav" href="contact.html">Contáctame</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- /header -->
+
+
+      <br /><br />
+      <br /><br />
       <div id="content">
-        <h1 class="index">Inicio</h1>
+        <h1 class="text" class="index">Inicio</h1>
 
         <img class="hackerindex" src="./img/hackerindex.png">
 
-          <h3>¿Que es un hackeo?</h3>
+          <h3 class="text">¿Que es un hackeo?</h3>
           <p>
             El hackeo es la aplicación de tecnología o conocimientos técnicos para superar alguna clase de problema u obstáculo.
              Nótese que nuestra definición no incluye, intencionadamente, nada de naturaleza delictiva.<br /><br /><br />
           </p>
-            <h3>Hay 3 tipos de hackers:</h3>
-            Dependiendo de sus motivaciones, los hackers pueden pertenecer a tres grupos: sombrero negro, sombrero blanco y sombrero gris.<br /><br />
+          <h3 class="text">Hay 3 tipos de hackers:</h3>
+          <p>Dependiendo de sus motivaciones, los hackers pueden pertenecer a tres grupos: sombrero negro, sombrero blanco y sombrero gris.</p><br />
 
-          <p>
+          <p class="text">
             <strong>Sombero negro</strong><br />Un hacker de sombrero negro es el turbio ciberdelincuente descrito antes. Son los que rompen sistemas de ciberseguridad para obtener acceso
              ilegal a un equipo o una red. Si un hacker de sombrero negro descubre una vulnerabilidad de seguridad, la aprovechará o alertará a otros hackers de la oportunidad,
               normalmente por un precio.<br /><br />
@@ -52,7 +71,7 @@
 
             <img class="sombreros" src="./img/sombreros.png">
 
-            <h3>Tipos más comunes de hackeo</h3>
+            <h3 class="text">Tipos más comunes de hackeo</h3>
 
             <p>
               <strong>Hackeo por beneficio económico</strong><br />Los hackers de sombrero negro solitarios y los colectivos de hackeo suelen ser ladrones. Sus ciberdelitos buscan robar
@@ -69,7 +88,7 @@
             </p>
             <img class="ataques" src="./img/ataques1.gif">
 
-            <h3>¿Es ilegar hackear?</h3>
+            <h3 class="text">¿Es ilegar hackear?</h3>
 
             <p>
               Que el hackeo sea o no un ciberdelito depende del consentimiento. Los hackers de sombrero blanco recaban
@@ -91,7 +110,11 @@
         </div>
     </body>
     <footer>
-      <p>Author: Eder López<br>
-      <p>Sígueme en <a href=https://www.instagram.com/edertxu2407/>Instagram</a></p>
+      <div class="container">
+        <div class="col">
+          <p>Author: Eder López<br>
+          <p>Sígueme en <a href=https://www.instagram.com/edertxu2407/>Instagram</a></p>
+        </div>
+      </div>
     </footer>
 </html>

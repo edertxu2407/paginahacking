@@ -1,73 +1,32 @@
-#header {
-  padding: 10px 20px;
-  background-color: #000000;
+.nav {
+  color: white;
+  padding: 40px;
+}
+
+p {
   color: white;
 }
 
-#header h1 {
-  margin: 0px;
-  color: #FFFFFF;
+li{
+  color: white;
+}
+
+td {
+  color: white;
+}
+
+body .text {
+  color: white;
+}
+
+body a:hover  {
+  color: red;
 }
 
 body {
   margin: 0px;
   font-family: hack nerd font;
-  color: #FFFFFF;
-}
-
-#header ul {
-  list-style: none;
-  padding: 0;
-  overflow: hidden;
-  margin-left: 1500px;
-
- }
-
-#header li {
-  float: left;
-  margin: 0 15px 0 0;
-}
-
-
-#content {
-  padding: 20px;
-  line-height: 2;
-}
-
-#header ul a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-#header ul a:hover {
-  color: #ff0000;
-}
-
-#header ul ul {
- display:none;
- position:absolute;
- top:100%;
- left:0;
- background:#eee;
- padding:0;
-}
-
-#header ul ul li {
- float:none;
- width:150px
-}
-
-#header ul ul a {
- line-height:120%;
- padding:10px 15px;
-}
-
-#header ul li:hover > ul {
- display:block;
-}
-
-#content h2 {
-  padding: 0 200px 0 200px;
+  color: white;
 }
 
 #content img {

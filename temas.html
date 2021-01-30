@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"
-        <title="Temas">
-        <link href="./css/styles.css" rel="stylesheet">
-    </head>
-    <body background="./img/negro.jpg" />
+  <head>
+      <meta charset="utf-8"
+      <title="Home">
+      <link href="./css/styles.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  </head>
+  <body background="./img/negro.jpg">
 
-    <div id="header">
-      <img src="./img/logo.png"/ class="logo">
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="temas.html">Temas</a></li>
-        <ul>
-          <li><a href="hack_instagram.html">Hackear Instagram</a></li>
-          <li><a href="meterpreter_android.html">Hackear android</a></li>
-        </ul>
-        <li><a href="sobre-mi.html">Sobre mi</a></li>
-        <li><a href="contact.html">Contáctame</a></li>
-      </ul>
-    </div>
+    <!-- header -->
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-black">
+      <div class="container-fluid">
+          <img src="./img/logo.png"/ class="logo" height="80" width="90">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav" aria-current="page" href="index.html" >Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav" href="temas.html">Temas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav" href="sobre-mi.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav" href="contact.html">Contáctame</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- /header -->
+
+      <br /><br />
+      <br /><br />
       <div id="content">
 
-        <h1>Temas</h1>
-        <h2>Pincha uno de los siguientes temas</h2>
+        <h1 class="text">Temas</h1>
+        <h2 class="text">Pincha uno de los siguientes temas</h2>
         <ul>
           <li><a href="hack_instagram.html"><u>Como hackear una cuenta de Instagram</u></a></li>
           <p>Si pinchas en esta link aprenderas a como hackear una cuenta de Instagram mediante tres métodos diferentes, por si alguno de los otros no fuera efectivo para esa víctima.</p>

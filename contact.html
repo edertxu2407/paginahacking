@@ -4,36 +4,54 @@
         <meta charset="utf-8"
         <title="Contactame">
         <link href="./css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     </head>
     <body background="./img/negro.jpg">
 
-      <div id="header">
-        <img src="./img/logo.png"/ class="logo">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="temas.html">Temas</a></li>
-          <ul>
-            <li><a href="hack_instagram.html">Hackear Instagram</a></li>
-            <li><a href="meterpreter_android.html">Hackear android</a></li>
-          </ul>
-          <li><a href="sobre-mi.html">Sobre mi</a></li>
-          <li><a href="contact.html">Contáctame</a></li>
-        </ul>
-      </div>
+      <!-- header -->
 
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark-black">
+        <div class="container-fluid">
+            <img src="./img/logo.png"/ class="logo" height="80" width="90">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav" aria-current="page" href="index.html" >Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav" href="temas.html">Temas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav" href="sobre-mi.html">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav" href="contact.html">Contáctame</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- /header -->
+
+      <br /><br />
+      <br /><br />
       <div id="content">
-        <h1>Contáctame</h1>
-        <p>Cualquier duda que tengas puedes contactar conmigo mediante este formulario de contacto.</p><br />
+        <h1 class="text">Contáctame</h1>
+        <p class="text">Cualquier duda que tengas puedes contactar conmigo mediante este formulario de contacto.</p><br />
         <form>
-          <label for="nombre-contacto">Nombre</label>
+          <label for="nombre-contacto" class="text">Nombre</label>
           <input type="text" id="nombre-contacto" name="nombre"/><br />
-          <label for="email-contacto">Email</label>
+          <label for="email-contacto" class="text">Email</label>
           <input type="email" id="email-contacto" name="email"/><br />
-          <label for="consulta-contacto">¿Cuál es tu consulta?</label>
+          <label for="consulta-contacto" class="text">¿Cuál es tu consulta?</label>
           <textarea id="consulta-contacto"></textarea><br />
           <input type="submit" value="Enviar" />
         </form>
-        <p><br />También podeis contactar conmigo llamando al <strong>+34 632 867 704 </strong>durante estos horarios.</p>
+        <p class="text"><br />También podeis contactar conmigo llamando al <strong>+34 632 867 704 </strong>durante estos horarios.</p>
         <table cellspacing="0">
           <tr>
               <td></td>
