@@ -1,6 +1,7 @@
 .nav {
   color: white;
   padding: 40px;
+  border-bottom: white dotted 1px;
 }
 
 p {
@@ -33,6 +34,10 @@ body {
   padding: 20px 75px 20px 50px;
 }
 
+.link {
+  color: red;
+}
+
 #content p {
   padding: 0 200px 0 200px;
 }
@@ -40,33 +45,6 @@ body {
 #content p a {
   color: #FF0000;
   text-decoration: none
-}
-
-#content img.zphisher {
-  padding-left: 200px;
-}
-
-#content img.brutegram {
-  padding-left: 200px
-}
-
-#content img.msf1 {
-  padding: 40px 200px 40px 200px;
-  height: 700px;
-  weight: 2000px;
-}
-
-#header img.logo {
-  height: 100px;
-  weight: 100px;
-}
-
-#content h1 {
-  padding-left: 200px;
-}
-
-#content img.meterpreter {
-  padding-left: 200px;
 }
 
 footer {

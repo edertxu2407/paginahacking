@@ -1,7 +1,9 @@
 .nav {
   color: white;
   padding: 40px;
+  border-bottom: white dotted 1px;
 }
+
 
 p {
   color: white;
@@ -29,14 +31,6 @@ body {
   color: white;
 }
 
-.two-columns img, .two-columns p {
-  float: left;
-  width: 40%;
-}
-
-.two-columns p {
-  margin: 0 0px;
-}
 
 #content form [type=text],#content form [type=Email],#content form textarea {
   display: block;
@@ -85,39 +79,6 @@ table{
 
 .color {
   background-color: red;
-}
-
-.hackerindex {
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-#content {
-  margin-left: 250px;
-  margin-right: 250px;
-}
-
-.sombreros {
-  padding-left: 300px;
-  padding-right: 250px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.ataques {
-  padding-left: 250px;
-  padding-right: 200px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.carcel {
-  padding-left: 300px;
-  padding-right: 200px;
-  padding-top: 40px;
-  padding-bottom: 80px;
 }
 
 footer {

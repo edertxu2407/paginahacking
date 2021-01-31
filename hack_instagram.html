@@ -37,66 +37,128 @@
 
         <!-- /header -->
 
+
+          <br /><br />
           <br /><br />
 
-      <div id="content">
-        <img id="img1" src="./img/instagram.jpg"/>
-        <img id="img2" src="./img/hacker.jpg"/>
 
-        <h1>Hackear Instagram</h1>
+        <!--fotos_intagram-->
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <img src="./img/instagram.jpg" alt="instagramtop" style="width:100%" class="mx-auto d-block">
+            </div>
+            <div class="col-">
+            </div>
+            <div class="col-6">
+              <img src="./img/hacker.jpg" alt="instagramtop" style="width:100%" class="mx-auto d-block">
+            </div>
+          </div>
+        </div>
 
-        <h2>Mirar si esta filtrada</h2>
-        <p>Lo primero que haremos sera mirar si su contraseña ha sido filtrada alguna vez, para ello entraremos <a href="https://breachdirectory.tk/">aqui</a>.
-          Una vez estemos dentro de la página lo que haremos será escribir el correo o nombre de usuario de la persona a la que queremos hackear y le damos a buscar,
-          puede que no nos salga nada porque la contraseña no se ha filtrado o puede que nos salga la mitad de la contraseña como puede ser algo asi rasca******
-          y al lado algo parecido a esto 1a7ff607e84e73f99bc8eec9cba0914f que es la contraseña cifrada en md5, para descifrarla buscamos en internet un descifrador online
-          como puede ser <a href="https://md5online.es/">este</a>, pegamos la contraseña cifrada y nos la devolverá sin cifrar, que en este caso sería rascacielos.</p>
 
-        <h2>Phishing</h2>
-        <p>Si el método anterior no funciono porque no aparecio ninguna contraseña filtrada o porque la contraseña filtrada era vieja,
-          tendremos que probar con otro metodo. La forma más rápida de hackear una cuenta de Instagram es mediante ingeniería social, que es aprovecharse de las personas
-          para hackearlas, con tecnicas como el phishing que es clonar una página web y hacer que la persona a la que queremos hackear piense que esta iniciando sesión
-          en la página web real pero en vez de eso nos llegarán su usuario, contraseña, ip y nos geolocaliza a la persona. Para hacer esto necesitaremos tener en el
-          ordenador una distro de linux como pueden ser Kali linux o Parrot os, que ya vienen con muchas herramientas orientadas a la seguridad o si tienes un teléfono android
-          puedes descargar desde la playstore la aplicación Termux.</p>
+        <!--/fotos_intagram-->
 
-        <p>Cuando lo tengamos todo instalado, vamos a la terminal y ejecutamos los siguiente comandos:</p>
 
-        <p>[+] Installation :<br />
+        <!--Sobre_mi-->
 
-          root@kali:~# apt update<br />
-          root@kali:~# apt install git php openssh curl -y<br />
-          root@kali:~# git clone https://github.com/htr-tech/zphisher<br />
-          root@kali:~# cd zphisher<br />
-          root@kali:~# chmod +x zphisher.sh<br />
-          root@kali:~# bash zphisher.sh<br />
-          <br />
-          Cuando se ejecute el script nos preguntara que que página queremos crear y le daremos al 2 que es Instagram, después le daremos al 1 para poner
-          la página tradicional y le volveremos a dar al 2 para crear el link con ngrok. Copiaremos el link y lo cambiaremos con un acortador de internet para que sea más facil que la víctima piense que es real y
-          se lo mandaremos a la víctima de alguna forma no pueda relacionarlo contigo.
-        <br /></p>
+        <div class="container">
+          <div class="row">
+            <div class="col-0">
+            </div>
+            <div class="col-5">
+              <br /><br />
+              <br /><br />
+              <div id="content">
+                <h1 class="text" class="index">Hackear Instagram</h1>
+            </div>
+            <div class="col-0">
+            </div>
+          </div>
+        </div>
 
-        <img class="zphisher" src="./img/zphisher.png">
+        <!--/Sobre_mi-->
 
-        <h2>Brute force</h2>
-        <p>La ultima forma de hackear Instagram sería por medio de fuerza bruta, es decir se va probando un diccionario de contraseñas automaticamente desde una terminal de linux o de termux como en el anterior.
-          Para hacerlo vamos a la terminal y ejecutamos los siguiente comandos:<br />
-          [+] Installation :<br />
 
-            root@kali:~# apt update && apt upgrade<br />
-            root@kali:~# apt install python python2 git jq<br />
-            root@kali:~# pip2 install requests mechanize<br />
-            root@kali:~# git clone https://github.com/Err0r-ICA/Brutegram<br />
-            root@kali:~# cd Brutegram<br />
-            root@kali:~# bash Brutegram<br />
-            <br />
-          Cuando se ejecuta el script, metes el nombre de usuario y el diccionario que quieres que pruebe y si esta la contraseña en ese diccionario te lo dirá.
-        </p>
-        <img class="brutegram" src="./img/brutegram.png">
-      </div>
+        <!--contenido-->
+        <div class="container">
+          <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-10">
+              <br /><br />
+              <h2 class="text">Mirar si esta filtrada</h2>
+              <p>Lo primero que haremos sera mirar si su contraseña ha sido filtrada alguna vez, para ello entraremos <a href="https://breachdirectory.tk/" class="link">aqui</a>.
+                Una vez estemos dentro de la página lo que haremos será escribir el correo o nombre de usuario de la persona a la que queremos hackear y le damos a buscar,
+                puede que no nos salga nada porque la contraseña no se ha filtrado o puede que nos salga la mitad de la contraseña como puede ser algo asi rasca******
+                y al lado algo parecido a esto 1a7ff607e84e73f99bc8eec9cba0914f que es la contraseña cifrada en md5, para descifrarla buscamos en internet un descifrador online
+                como puede ser <a href="https://md5online.es/" class="link">este</a>, pegamos la contraseña cifrada y nos la devolverá sin cifrar, que en este caso sería rascacielos.</p>
+              <br /><br />
+
+              <h2 class="text">Phishing</h2>
+              <p>Si el método anterior no funciono porque no aparecio ninguna contraseña filtrada o porque la contraseña filtrada era vieja,
+                tendremos que probar con otro metodo. La forma más rápida de hackear una cuenta de Instagram es mediante ingeniería social, que es aprovecharse de las personas
+                para hackearlas, con tecnicas como el phishing que es clonar una página web y hacer que la persona a la que queremos hackear piense que esta iniciando sesión
+                en la página web real pero en vez de eso nos llegarán su usuario, contraseña, ip y nos geolocaliza a la persona. Para hacer esto necesitaremos tener en el
+                ordenador una distro de linux como pueden ser Kali linux o Parrot os, que ya vienen con muchas herramientas orientadas a la seguridad o si tienes un teléfono android
+                puedes descargar desde la playstore la aplicación Termux.</p>
+
+              <p>Cuando lo tengamos todo instalado, vamos a la terminal y ejecutamos los siguiente comandos:</p>
+
+              <p>[+] Installation :<br />
+
+                root@kali:~# apt update<br />
+                root@kali:~# apt install git php openssh curl -y<br />
+                root@kali:~# git clone https://github.com/htr-tech/zphisher<br />
+                root@kali:~# cd zphisher<br />
+                root@kali:~# chmod +x zphisher.sh<br />
+                root@kali:~# bash zphisher.sh<br />
+                <br />
+                Cuando se ejecute el script nos preguntara que que página queremos crear y le daremos al 2 que es Instagram, después le daremos al 1 para poner
+                la página tradicional y le volveremos a dar al 2 para crear el link con ngrok. Copiaremos el link y lo cambiaremos con un acortador de internet para que sea más facil que la víctima piense que es real y
+                se lo mandaremos a la víctima de alguna forma no pueda relacionarlo contigo.
+              <br /></p>
+
+              <br /><br />
+              <img src="./img/zphisher.png" alt="zphisher" style="width:70%" class="mx-auto d-block">
+              <br /><br />
+
+              <h2 class="text">Brute force</h2>
+              <p>La última forma de hackear Instagram sería por medio de fuerza bruta, es decir se va probando un diccionario de contraseñas automaticamente desde una terminal de linux o de termux como en el anterior.
+                Para hacerlo vamos a la terminal y ejecutamos los siguiente comandos:<br />
+                [+] Installation :<br />
+
+                  root@kali:~# apt update && apt upgrade<br />
+                  root@kali:~# apt install python python2 git jq<br />
+                  root@kali:~# pip2 install requests mechanize<br />
+                  root@kali:~# git clone https://github.com/Err0r-ICA/Brutegram<br />
+                  root@kali:~# cd Brutegram<br />
+                  root@kali:~# bash Brutegram<br />
+                  <br />
+                Cuando se ejecuta el script, metes el nombre de usuario y el diccionario que quieres que pruebe y si está la contraseña en ese diccionario te lo dirá.
+              </p>
+
+              <br /><br />
+              <img src="./img/brutegram.png" alt="brutegram" style="width:70%" class="mx-auto d-block">
+              <br /><br />
+              <br /><br />
+
+            </div>
+            <div class="col-1">
+            </div>
+          </div>
+        </div>
+
+
+        <!--/contenido-->
+
     </body>
     <footer>
-      <p>Author: Eder López<br>
-      <p>Sígueme en <a href=https://www.instagram.com/edertxu2407/>Instagram</a></p>
+      <div class="container">
+        <div class="col">
+          <p>Author: Eder López<br>
+          <p>Sígueme en <a href=https://www.instagram.com/edertxu2407/>Instagram</a></p>
+        </div>
+      </div>
     </footer>
   </html>
